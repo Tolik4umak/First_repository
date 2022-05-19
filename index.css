@@ -1,13 +1,5 @@
-.block{
-  margin: 0 auto;
-  max-width: 800px;
-}
-h1 {
-  background-color: aqua;
-  text-align: center;
-}
-p{
-  margin: 0 auto;
-  background-color: rgba(137, 43, 226, 0.164);
-  min-height: 600px;
+.grid_header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: blanchedalmond;
 }
