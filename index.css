@@ -1,9 +1,12 @@
-*{
+* {
   box-sizing: border-box;
 }
 .right {
   background-color: rgb(133, 255, 255);
   padding: 5% 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
 }
 .grid_header {
   display: grid;
@@ -15,8 +18,6 @@
   height: 50px;
   margin: 0 auto;
   padding: 0 2%;
-  
-
 }
 .about {
   list-style: none;
@@ -26,16 +27,37 @@
   align-items: center;
   grid-gap: 10px;
 }
-.about > li{
+.about > li {
   text-align: center;
   white-space: nowrap;
-  
 }
-.logo{
+.logo {
   height: 50%;
 }
-.logo img{
+.logo img {
   height: 100%;
 }
+.anna_about_me {
+  display: grid;
+  grid-template-columns: 40% 70%;
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(231, 180, 255);
+  grid-template-rows: 100%;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-
+.short_sv {
+  background-color: rgb(231, 180, 255);
+  padding: 5%;
+}
+.used_instr_jpg {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  padding: 5%;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
