@@ -210,3 +210,16 @@
     text-align: center;
   }
 }
+
+/* block 4 ///////////////////////////////// */
+.section{
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3% 2%;
+  background-color: rgb(80, 79, 79);
+ 
+}
+.block4tolik{
+
+}
