@@ -2,23 +2,81 @@
   box-sizing: border-box;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(53, 53, 53);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
 .right {
   background-color: rgb(53, 53, 53);
-  padding: 5% 0;
+  padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1em;
   
 }
+
+.section{
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 2%;
+  background-color: rgb(80, 79, 79);
+ 
+}
+.left{
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  body {
+    background: #ff9900;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 100px;
+    grid-gap: 4%;
+    align-items: center;
+    justify-content: end;
+    max-width: 2500px;
+    min-width: 1800px;
+    margin: 0 auto;
+  }
+  .right {
+    width: 800px;
+    height: 1000px;
+    overflow: auto;
+   
+    
+  }
+  .left{
+    display: block;
+    display: grid;
+    justify-content: end;
+
+  }
+  .left>img{
+    width: 800px;
+  }
+
+
+}
+
+
+
 .grid_header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100%;
   align-items: center;
   background-color: rgb(80, 79, 79);
-  width: 80%;
   height: 50px;
-  margin: 0 auto;
   padding: 0 2%;
   font-size: 65%;
 }
@@ -36,13 +94,16 @@
   text-align: center;
   white-space: nowrap;
 }
+.about>li:hover{
+  color: #ff9900;
+}
 .logo {
   height: 50%;
 }
 .logo img {
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .grid_header {
     grid-template-columns: repeat(1, 1fr);
     height: inherit;
@@ -64,8 +125,7 @@
 
 .anna_about_me {
   display: grid;
-  margin: 0 auto;
-  width: 80%;
+  
   background-color: rgb(80, 79, 79);
   grid-template-rows: 100%;
   align-items: center;
@@ -77,19 +137,15 @@
   color: rgb(228, 228, 228);
   padding: 0;
   margin: 0;
-}
-
-.short_sv {
-  padding: 5%;
-}
-.used_instr_jpg {
   text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  padding: 5%;
-  width: 100%;
+}
+.short_sv > p {
+  text-align: center;
+}
 
-  object-fit: cover;
+
+.used_instr_jpg {
+  width: 100%;
 }
 .used_instr_jpg > img {
   width: 100%;
@@ -105,10 +161,6 @@
 /* Tolik //////////////////////////////*/
 
 .tolik {
-  margin: 0 auto;
-  width: 80%;
-  padding: 3% 2%;
-  background-color: rgb(80, 79, 79);
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -214,30 +266,17 @@
 
 
 
-
-
-
-
-
-
 /* block 4 ///////////////////////////////// */
-.section{
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 2%;
-  background-color: rgb(80, 79, 79);
- 
-}
+
 .block4tolik{
   display: grid;
   grid-template-areas: 
         "myresume  myresume"
         "experiance skills";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15px 1fr;
+  grid-template-rows: 30px 1fr;
   /* justify-items: start; */
-  grid-gap: 2vw;
+  grid-column-gap: 2vw;
   
 }
 
@@ -247,12 +286,14 @@
   grid-area: myresume ;
   justify-self: center;
   margin: 0;
+ 
   color: #ff9900;
   text-transform: capitalize;
   font-size: 14px;
   line-height: 14px;
-  /* border: 1px solid red; */
+
 }
+
 
 
 /* Experiance___________________________________ */
@@ -292,6 +333,14 @@
   font-weight: bold;
   line-height: 14px;
 }
+.skills__item_main>a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.skills__item_main:hover.skills__item_main>a {
+  color: #ff9900;
+}
 .skills__item_descr{
   font-size: 8px;
   padding-bottom: 15px;
@@ -313,7 +362,7 @@
   top: 0;
   left: 3px;
 }
-.skills__list>.skills__item_main:before{
+.skills__item_main:before{
   content: "";
   display: block;
   height: 8px;
@@ -322,7 +371,12 @@
   border-radius: 50%;
   position: absolute;
   left: 0;
-}/* ////////////////////////////////////////////////// */
+}
+.skills__item_main:hover:before{
+  background-color: #ff9900;
+}
+
+/* ////////////////////////////////////////////////// */
 
 
 @media (max-width: 600px) {
