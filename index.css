@@ -92,7 +92,7 @@
   object-fit: cover;
 }
 .used_instr_jpg > img {
-  wight: 100%;
+  width: 100%;
   height: auto;
 }
 @media (max-width: 600px) {
@@ -348,6 +348,65 @@
   .skills{
     justify-self: start;
   }
-
-  
 }
+/* ///////Anna      ////// */
+
+.Resume_anna {
+  background-color: rgb(80, 79, 79);
+  display: grid;
+  margin: 0 auto;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1 fr 2 fr;
+  color: rgb(228, 228, 228);
+}
+.resume {
+  text-align: center;
+  Font-size: 14px;
+  color: #ff9900;
+  padding: 5% 0% 0%;
+
+}
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+.descriptoion_experiance  {
+  padding: 5%;
+}
+.descriptoion_experiance >h2 {
+  color: #ff9900;
+}
+.color {
+  color: #ff9900;
+}
+
+
+.experiance_in_company {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 1fr;
+  padding: 5%;
+  font-size: 14px;
+}
+.company1:hover {
+        cursor: pointer;
+        color: #ff9900;
+      }
+
+.company2:hover {
+        cursor: pointer;
+        color: #ff9900;
+      }      
+
+.company3:hover {
+        cursor: pointer;
+        color: #ff9900;
+      }
+
+.company4:hover {
+        cursor: pointer;
+        color: #ff9900;
+      }     
+
+
+
