@@ -4,37 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Case2</title>
+    <link rel="icon" type="image/x-icon" href="./img/Logo-Logo.svg" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-
     <div class="wrapper">
       <div class="left"><img src="./img/Logo-Logo.svg" alt="" /></div>
       <div class="right">
-
         <header>
           <section class="content">
-            <div class="content__left hide">
+            <div class="content__left">
               <a href="#">
-                <img src="./img/Logo-Logo.svg" alt="logo" />
+                <img class="hide" src="./img/Logo-Logo.svg" alt="logo" />
               </a>
+              <div class="search">
+                <input
+                  class="search_text"
+                  type="text"
+                  placeholder="What are you looking for?"
+                />
+                <button class="search_button" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
             </div>
-    
+
             <nav class="content__right">
               <ul class="navigation">
-                <li><a target="_blank" href="#">ABOUT ME</a></li>
-                <li><a target="_blank" href="#">WORK</a></li>
-                <li><a target="_blank" href="#">SPEAKING</a></li>
-                <li><a target="_blank" href="#">BLOG</a></li>
-                <li><a target="_blank" href="#">HIRE ME</a></li>
+                <li>
+                  <a ! href="#">ABOUT ME</a>
+                  <ul class="submenu">
+                    <li>
+                      <a class="sublink" href="#">My biography</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">My experiance</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">My hobby</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">WORK</a>
+                  <ul class="submenu">
+                    <li>
+                      <a class="sublink" href="#">Khan Academy</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">Smashing Magazine</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">Codrops</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">BLOG</a>
+                  <ul class="submenu">
+                    <li>
+                      <a class="sublink" href="#">My biography</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">My experiance</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">My hobby</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">CONTACT ME</a>
+                  <ul class="submenu">
+                    <li>
+                      <a class="sublink" href="mailto:dream1nd@gmail.com"
+                        >MAIL ME</a
+                      >
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">TWITTER</a>
+                    </li>
+                    <li>
+                      <a class="sublink" href="#">INSTAGRAM</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a target="_blank" href="faq.html">FAQ</a></li>
               </ul>
             </nav>
           </section>
         </header>
-  
+
         <main>
-          
           <section class="content">
             <div class="content__left">
               <h2 class="developer__name">Hi, I am Sara</h2>
@@ -43,18 +109,28 @@
                 <a target="_blank" href="https://www.google.de/">Contact me</a>
               </div>
             </div>
-    
+
             <div class="content__left">
               <div class="developer__photo">
-                <div class="developer__photo_decoration1 photo__decoration"></div>
-                <div class="developer__photo_decoration2 photo__decoration"></div>
-                <div class="developer__photo_decoration3 photo__decoration"></div>
-                <div class="developer__photo_decoration4 photo__decoration"></div>
-                <div class="developer__photo_decoration5 photo__decoration"></div>
+                <div
+                  class="developer__photo_decoration1 photo__decoration"
+                ></div>
+                <div
+                  class="developer__photo_decoration2 photo__decoration"
+                ></div>
+                <div
+                  class="developer__photo_decoration3 photo__decoration"
+                ></div>
+                <div
+                  class="developer__photo_decoration4 photo__decoration"
+                ></div>
+                <div
+                  class="developer__photo_decoration5 photo__decoration"
+                ></div>
               </div>
             </div>
           </section>
-    
+
           <section class="content">
             <div class="content__left">
               <h1 class="developer_about">
@@ -67,13 +143,16 @@
               </p>
             </div>
             <div class="content__right">
-              <img src="/img/web-remov.png" alt="technologys" class = "web_instr"
-              >
+              <img
+                src="./img/web-remov.png"
+                alt="technologys"
+                class="web_instr"
+                type="png"
+              />
             </div>
           </section>
-          
-          <section class="content">
 
+          <section class="content paralax">
             <h2 class="resume__title">my resume</h2>
 
             <div class="content__left">
@@ -87,30 +166,60 @@
 
             <div class="content__right">
               <ul class="skills__list">
-                <li class="skills__item_main"><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a> </li>
+                <li class="skills__item_main">
+                  <a target="_blank" href="https://www.khanacademy.org/"
+                    >Khan Academy</a
+                  >
+                </li>
                 <li class="skills__item_description">Lorem ipsum dolor sit.</li>
-                <li class="skills__item_main"><a target="_blank" href="http://smashingmagazine.com/">Smashing Magazine</a> </li>
+                <li class="skills__item_main">
+                  <a target="_blank" href="http://smashingmagazine.com/"
+                    >Smashing Magazine</a
+                  >
+                </li>
                 <li class="skills__item_description">Lorem ipsum dolor sit.</li>
-                <li class="skills__item_main"><a target="_blank" href="https://superfriendlydesign.systems/">SuperFriendly</a> </li>
-                <li class="skills__item_description">Working from 2018 to 2020</li>
-                <li class="skills__item_main"><a target="_blank" href="https://prismic.io/">Prismic</a> </li>
-                <li class="skills__item_description">Working from 2020 to 2022</li>
+                <li class="skills__item_main">
+                  <a target="_blank" href="https://superfriendlydesign.systems/"
+                    >SuperFriendly</a
+                  >
+                </li>
+                <li class="skills__item_description">
+                  Working from 2018 to 2020
+                </li>
+                <li class="skills__item_main">
+                  <a target="_blank" href="https://prismic.io/">Prismic</a>
+                </li>
+                <li class="skills__item_description">
+                  Working from 2020 to 2022
+                </li>
               </ul>
             </div>
-
           </section>
-
+          <section class="content one_collumn">
+            <h2 class="work__title">Into Interior Design</h2>
+            <p>I’m a big interior design enthusiast. I always have been. Interior design has always been one of those things I always go back to whenever I feel like I need a dose of pick-me-up inspiration. You know how almost all successful designers in different fields recommend looking for inspiration in adjacent design fields? Interior design is where I find that inspiration, for work and for other aspects of my life.</p>
+            <p>My mom used to take me with her on many doctor’s appointments when I was a child, and we’d often have to sit and wait for our turn for hours. I don’t remember getting bored much. I’d always grab and start browsing all the tabletop magazines, getting lost in the world of design — particularly that of interiors.</p>
+            <p>This home decor magazine browsing habit grew with me as I grew. I still love browsing interior design magazines, reading articles about interior design, following Pinterest boards for inspiration, watching home makeover shows (my favorite!) and tours, etc. There’s just something about designing spaces for living that captures my soul and feeds my senses in a most satisfying way. It’s like a breath of fresh air; something I never seem to get bored of.</p>
+            <p>So, this year, with all that’s been happening in the world that’s out of my control, I decided to focus on the things I can control, and put the time I have at hand into good use: growing and learning new skills — some related to my work, and many that are not. Among the things I decided to focus on and learn more about is interior design.</p>
+            <h2 class="work__title">Baby steps forward</h2>
+            <p>The Internet is amazing. It still blows my mind every day that you can learn almost anything in the comfort of your home now. You can cultivate skills, learn new ones, and just grow.</p>
+            <p>These won’t be the last courses I’ll be taking on interior design. One thing I’ve decided to do this year is to start pursuing my passions in different areas (many of which are in the area of design). Where this will take me in each one, I still don’t know. I already have a couple of spaces I want to design and look forward to doing it with a true interior designer’s mindset and approach.</p>
+            <p>For now, interior design is a hobby. A kind of serious one. Will it turn into something more? I don’t know. Will it turn into a side career? I don’t know. Might I start a blog all about interior design to follow this interest and share my passion with others who share it with me? 👀 I don’t know that either. What I do know is that I’ve taken a step forward into something that I love, and that alone is something to be excited about. What the future holds, I don’t need to know now.</p>
         </main>
-            
+
         <footer>
-          <section class="content">
-            <p class="copyright">© 2013–Today / Copyright Sara Soueidan. All rights reserved.</p>
-            <p>created by Anatoliy Chumak and Anna Hovzan</p>
+          <section class="content one_collumn">
+            <div class="social_media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <p class="copyright">© 2022 Sara Soueidan</p>
           </section>
         </footer>
-
+        <br />
       </div>
     </div>
-
   </body>
 </html>
