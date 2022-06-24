@@ -356,7 +356,6 @@ header .content__left {
   background: url("./img/paralax_photo.jpeg") center / cover no-repeat fixed;
 }
 
-
 /* left */
 .experiance__title {
   text-transform: uppercase;
@@ -439,7 +438,7 @@ header .content__left {
 
 /* section#5*/
 
-.project_card{
+.project_card {
   /* height: 30vmin; */
   max-height: 350px;
   min-height: 300px;
@@ -464,18 +463,29 @@ header .content__left {
   justify-items: center;
   align-items: center;
   padding-left: 20px;
-
+  position: relative;
 }
-.project_text > h3{
+
+#click {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  color: #353535;
+  padding: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.project_text > h3 {
   font-size: 2.2em;
-
 }
-.project_image{
+.project_image {
   width: 50px;
 }
-
-
-
 
 /* ---------------------------------------------- */
 
@@ -525,13 +535,11 @@ header .content__left {
 }
 
 @media (max-width: 800px) {
- 
   main .my_project {
     grid-template-columns: 1fr;
   }
-  .my_project>.center__title {
+  .my_project > .center__title {
     grid-column: span 1;
     margin: 0;
   }
 }
-
