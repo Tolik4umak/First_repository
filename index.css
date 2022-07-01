@@ -1,18 +1,5 @@
 /* 
                   HEADER
-
--  FAQ-page                                                 V
--  link to Mail                                             V
--  sub-menus                                                V
--  menu appear after mouse-over                             V
--  add search-bar (dummy)                                   V
--  make it ‘frozen’ by scrolling                            V
-
-                OTHER
-- button-clicks and do animation using css-functionality   X
-- Read about graphical optimization.                        X
--  parallax-effect                                          V
-  
  */
 
 * {
@@ -24,6 +11,7 @@
   --textcolor-orange: #ff9900;
   --textcolor-hover: #ff9900;
   --bg-color: #353535;
+  --bg-color2: #504f4f;
 }
 
 body {
@@ -80,12 +68,13 @@ a {
 .right {
   background-color: #353535;
   color: var(--textcolor-white);
+  min-width: 600px;
 }
 .content {
   width: 80%;
   max-width: 800px;
   margin: 20px auto;
-  background-color: rgb(80, 79, 79);
+  background-color: var(--bg-color2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -179,9 +168,6 @@ header .content__left {
   text-align: center;
   position: relative;
 }
-.navigation > a {
-  border: 1px solid rgb(47, 0, 255);
-}
 .navigation > li:hover {
   color: var(--textcolor-orange);
 }
@@ -191,7 +177,7 @@ header .content__left {
   list-style: none;
   position: absolute;
   top: 10px;
-  right: 0;
+  left: 0;
   padding: 17px 0 0 0;
 }
 .sublink {
@@ -466,7 +452,7 @@ header .content__left {
   position: relative;
 }
 
-#click {
+.click {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -478,6 +464,11 @@ header .content__left {
   padding: 20px;
   opacity: 0;
   cursor: pointer;
+  border: 10px solid var(--bg-color2);
+
+  display: grid;
+  align-content: center;
+  text-align: center;
 }
 
 .project_text > h3 {
@@ -518,6 +509,14 @@ header .content__left {
     width: 90%;
     grid-gap: 20px;
     padding: 20px;
+  }
+
+  nav.content__right {
+    justify-self: stretch;
+  }
+
+  .navigation {
+    font-size: 1.1em;
   }
   .hide {
     display: none;
